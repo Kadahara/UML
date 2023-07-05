@@ -245,12 +245,13 @@ public:
 			system("CLS");
 			cout << "Fuel level:\t" << tank.get_fuel_level() << " liters.\n";
 			cout << "Engine is " << (engine.started() ? "started" : "stopped") << endl;
-			std::this_thread::sleep_for(1s);
 			if (tank.get_fuel_level() <= 5)
 			{
 				cout << "LOW FUEL";
 			}
 			cout << endl;
+			std::this_thread::sleep_for(1s);
+		
 		} 
 	}
 
